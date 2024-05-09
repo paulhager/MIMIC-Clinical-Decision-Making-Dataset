@@ -2,8 +2,15 @@
 
 This repository contains the code to create the MIMIC Clinical Decision Making (MIMIC-CDM) Dataset
 
-Executing the cells of the notebook CreateDataset.ipynb in order will create the dataset.
+```python CreateDataset.py``` creates the dataset from raw MIMIC-IV v2.2 download. Before executing, three paths must be set at the top of the file. base_mimic should be set to the parent folder of your MIMIC-IV download. This folder should contain the hosp and note folders. base_new should be set to a folder where the generated files will be saved. 
 
-You must set the path in the first cell to the parent folder of your MIMIC-IV download. This folder should contain the hosp and note folders.
 
-The notebook also contains code to create the pickle files need for the MIMIC Clinical Decision Making task.
+```python ConvertPhysionet.py``` creates the pickle files need for the MIMIC Clinical Decision Making task from the MIMIC-CDM downloaded directly from PhysioNet. base_new should be set to the path containing the raw MIMIC-CDM dataset files downloaded from PhysioNet.
+
+## Environment
+
+To setup the environment, create a new virtual environment of your choosing and then run 
+
+```
+pip install --no-deps -r requirements.txt
+```
