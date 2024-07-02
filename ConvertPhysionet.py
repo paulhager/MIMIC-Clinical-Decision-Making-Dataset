@@ -7,7 +7,7 @@ import pickle
 from utils.nlp import extract_primary_diagnosis
 from dataset.utils import write_hadm_to_file
 
-base_new = "/vol/aimspace/users/hagp/Projects/ClinicalBenchmark/data_download_test/physionet.org/files/mimic-iv-ext-cdm/1.0"
+base_new = ""
 
 # Process lab test mapping
 lab_test_mapping_df = pd.read_csv(join(base_new, "lab_test_mapping.csv"))
