@@ -1,4 +1,5 @@
 from os.path import join
+import json
 import pandas as pd
 import ast
 import pickle
@@ -6,7 +7,7 @@ import pickle
 from utils.nlp import extract_primary_diagnosis
 from dataset.utils import write_hadm_to_file
 
-base_new = ""
+base_new = "/vol/aimspace/users/hagp/Projects/ClinicalBenchmark/data_download_test/physionet.org/files/mimic-iv-ext-cdm/1.0"
 
 # Process lab test mapping
 lab_test_mapping_df = pd.read_csv(join(base_new, "lab_test_mapping.csv"))
@@ -127,12 +128,8 @@ for _, row in icd_procedures_df.iterrows():
 
 
 # Parse patient case files
-patho_ids = {
-    "appendicitis": [],
-    "cholecystitis": [],
-    "pancreatitis": [],
-    "diverticulitis": [],
-}
+with open(join(base_new, "pathology_ids.json")) as f:
+    patho_ids = json.load(f)
 
 app_hadm_info_firstdiag = {}
 cholec_hadm_info_firstdiag = {}
