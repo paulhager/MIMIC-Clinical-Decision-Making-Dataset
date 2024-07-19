@@ -4,6 +4,9 @@ This repository contains the code to create the MIMIC Clinical Decision Making (
 
 Visit https://huggingface.co/spaces/MIMIC-CDM/leaderboard to check out the current leaderboard. I will update this as new models are released. If you would like a model to be tested and put on the board, please write me an email at paul (dot) hager (at) tum (dot) de.
 
+**🔥 New Addition: Llama 3 has been added to the leaderboard! 🔥**
+
+
 ## Environment
 
 To setup the environment, create a new virtual environment of your choosing with python=3.10 and then run:
