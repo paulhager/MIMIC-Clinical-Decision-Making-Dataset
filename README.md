@@ -24,9 +24,9 @@ The most straightforward way of using the data is by downloading it from https:/
 
 ## Option 2: Generate the dataset from scratch from MIMIC-IV v2.2 
 
-The more laborious and time-intensive way of creating the dataset is from the raw MIMIC-IV v2.2 download. First set the following two path variables in [CreateDataset.py](CreateDataset.py):
+The more laborious and time-intensive way of creating the dataset is from the raw MIMIC-IV v2.2 download. First download the necessary hospital data from https://physionet.org/content/mimiciv/2.2/ and the necessary text data from https://www.physionet.org/content/mimic-iv-note/2.2/.  Then set the following two path variables in [CreateDataset.py](CreateDataset.py):
 
-1. `base_mimic` should be set to the parent folder of your MIMIC-IV download. This folder should contain the hosp and note folders.
+1. `base_mimic` should be set to the parent folder of your MIMIC-IV download. This folder should contain the [hosp](https://physionet.org/content/mimiciv/2.2/) and [note](https://www.physionet.org/content/mimic-iv-note/2.2/) folders.
 2. `base_new` should be set to a folder where the generated files will be saved.
 
 Then run:
