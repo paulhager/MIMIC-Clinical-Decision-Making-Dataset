@@ -1,5 +1,9 @@
 # MIMIC Clinical Decision Making
 
+**🔥 New Addition: Llama 3.1 has been added to the leaderboard! 🔥**
+
+**🔥 New Addition: OpenBio has been added to the leaderboard! 🔥**
+
 **🔥 New Addition: Llama 3 has been added to the leaderboard! 🔥**
 
 This repository contains the code to create the MIMIC Clinical Decision Making (MIMIC-CDM) Dataset.
